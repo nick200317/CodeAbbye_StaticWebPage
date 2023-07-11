@@ -6,15 +6,6 @@
     <title>Static Web Page</title>
 </head>
 <body onload="GetSecretValue()">
-    <p>Secret value is <b id="secretValue"></b></p>
+    <p>Secret value is 4400159</p>
 </body>
-<script>
-    function GetSecretValue() 
-    {
-        var urlParams = new URLSearchParams(window.location.search);
-        var secretValue = urlParams.get("secretValue");
-
-        document.getElementById("secretValue").innerHTML = secretValue;
-    }
-</script>
 </html>
