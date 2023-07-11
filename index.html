@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Web Page</title>
+</head>
+<body onload="GetSecretValue()">
+    <p>Secret value is <b id="secretValue"></b></p>
+</body>
+<script>
+    function GetSecretValue() 
+    {
+        var urlParams = new URLSearchParams(window.location.search);
+        var secretValue = urlParams.get("secretValue");
+
+        document.getElementById("secretValue").innerHTML = secretValue;
+    }
+</script>
+</html>
